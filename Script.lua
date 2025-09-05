@@ -391,19 +391,6 @@ IncreaseRadius.MouseButton1Click:Connect(function()
     playSound("12221967")
 end)
 
--- Get player thumbnail
-local userId = Players:GetUserIdFromNameAsync("Robloxlukasgames")
-local thumbType = Enum.ThumbnailType.HeadShot
-local thumbSize = Enum.ThumbnailSize.Size420x420
-local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
-
-StarterGui:SetCore("SendNotification", {
-    Title = "Super ring parts V4",
-    Text = "enjoy",
-    Icon = content,
-    Duration = 5
-})
-
 -- Chat message (Updated for new chat system)
 local function SendChatMessage(message)
     if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
